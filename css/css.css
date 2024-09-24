@@ -22,8 +22,8 @@ p {
     display: none;
 }
 div{
-    min-height: 39vh;
-    max-width: 345px;
+    min-height: 179vh;
+    max-width: 545px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -32,7 +32,9 @@ div{
     padding: 19px;    
 }
 #mega{
-    background-color: hsl(130, 88%, 42%);
+    background-image: url(/acumulados/images/principal/base.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 article {
     width: 45%;

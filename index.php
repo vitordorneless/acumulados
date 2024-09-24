@@ -31,11 +31,13 @@ $acumulados = array(
     <?php
     foreach ($acumulados as $value) {
         echo '<section>';
+        echo '<div>';
         echo '<div class="' . $value['jogo'] . '" id="' . $value['jogo'] . '">';
         echo '<p>';
         echo 'Jogo: ' . $value['jogo'] . '<br>';
         echo 'R$' . number_format($value['acumulado'], 2, ',', '.');
         echo '</p>';
+        echo '</div>';
         echo '</div>';
         echo '</section>';
     }
