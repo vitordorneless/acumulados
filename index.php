@@ -33,10 +33,29 @@ $acumulados = array(
         echo '<section>';
         echo '<div>';
         echo '<div class="' . $value['jogo'] . '" id="' . $value['jogo'] . '">';
-        echo '<p>';
-        echo 'Jogo: ' . $value['jogo'] . '<br>';
+        echo '<div style="overflow-x: auto;">';
+        echo '<table>';
+        
+        echo '<tr>';
+        echo '<td>';
+        echo $value['jogo'];
+        echo '</td>';
+        echo '<td>';
         echo 'R$' . number_format($value['acumulado'], 2, ',', '.');
-        echo '</p>';
+        echo '</td>';
+        echo '</tr>';
+
+        echo '<tr>';
+        echo '<td class="boloes" id="boloes">';
+        echo 'APOSTE EM NOSSOS BOLÕES';
+        echo '</td>';
+        echo '<td>';
+
+        echo '</td>';
+        echo '</tr>';
+        
+        echo '</table>';
+        echo '</div>';
         echo '</div>';
         echo '</div>';
         echo '</section>';
